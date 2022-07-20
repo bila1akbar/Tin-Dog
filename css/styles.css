@@ -1,0 +1,236 @@
+body {
+	text-align: center;
+}
+/* !Padding to almost all the sections  */
+.container-fluid {
+	padding: 3% 15%;
+}
+
+/* header is for the navbar and the title section  */
+header {
+	background-color: #ff4c68;
+}
+/* The navbar section  */
+.navbar-brand {
+	font-weight: 600;
+	font-size: 3rem;
+}
+.nav-item {
+	margin-right: 3rem;
+	font-size: larger;
+	font-family: "Montserrat", sans-serif;
+}
+@media (max-width : 990px) {
+    nav{
+        background-color: #ff3452;
+        padding: 1rem;
+        border-radius: 3%;
+    }
+}
+/* The title section */
+#title {
+	background-color: #ff4c68;
+	margin: 4rem auto 3rem;
+	text-align: left;
+}
+.title-heading {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
+	font-size: 3.5rem;
+	line-height: 1.5;
+	color: white;
+}
+.text-on-left {
+	align-self: flex-start;
+	margin: 2rem auto 3rem;
+}
+.download-buttons {
+	margin: 0rem 0.5rem;
+	font-size: larger;
+}
+
+/* Added this class to make the parent relative */
+.the-iphone-image-parent {
+	position: relative;
+}
+/* the dog in the iphone image in the title  */
+.title-image {
+	transform: rotate(25deg);
+	width: 60%;
+	margin-left: 2rem;
+	position: absolute;
+	right: 30%;
+}
+/* Media queries for the title section */
+@media (max-width: 980px) {
+	.navbar-brand {
+		font-size: 2rem;
+	}
+	#title {
+		text-align: center;
+	}
+	.title-heading {
+		font-size: 3rem;
+	}
+	.title-image {
+		position: static;
+		transform: none;
+		margin-left: 0px;
+	}
+	.text-on-left {
+		margin: 1rem auto 1rem;
+	}
+	.download-buttons {
+		margin: 2rem 0.5rem;
+	}
+	.container-fluid {
+		padding: 3% 5% 4%;
+	}
+}
+/* The features section  */
+#features {
+	position: relative;
+	background-color: white;
+}
+.section-inside-features {
+	padding: 3rem;
+}
+.red-icons {
+	color: #ef8172;
+	font-size: 5rem;
+	margin-bottom: 1rem;
+}
+.red-icons:hover {
+	color: #ff4c68;
+}
+.features-heading {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+.features-heading + p {
+	color: #8f8f8f;
+	font-size: medium;
+}
+/* !No media query was needed for the features section  */
+
+/* The testimonial section */
+#testimonials {
+	background-color: #ef8172;
+	color: #ffffff;
+	height: 100%;
+}
+.carousel-item {
+	padding: 7% 15%;
+}
+#testimonials h2 {
+	font-family: "Mintserrat", sans-serif;
+	font-weight: 900;
+	font-size: 3rem;
+	line-height: 1.5;
+}
+#testimonials img {
+	width: 10%;
+	border-radius: 100%;
+	margin: 1.2rem;
+}
+@media (max-width: 980px) {
+	#testimonials h2 {
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	#testimonials img {
+		width: 15%;
+	}
+}
+/* The press section  */
+#press {
+	background-color: #ef8172;
+	padding-bottom: 3%;
+}
+#press img {
+	width: 15%;
+	margin: 0px 2% 3%;
+}
+@media (max-width: 990px) {
+	#press img {
+		width: 10%;
+	}
+}
+/* Pricing section  */
+.price-heading {
+	font-family: "Mintserrat", sans-serif;
+	font-weight: 900;
+	font-size: 3rem;
+}
+.pricing-para {
+	font-family: "Mintserrat", sans-serif;
+	color: #8f8f8f;
+}
+.pricing-cards {
+	padding: 3% 2%;
+}
+.card-body h2 {
+	font-family: "Mintserrat", sans-serif;
+	color: black;
+	font-weight: 900;
+	font-size: 3rem;
+}
+.card-body {
+	font-family: "Mintserrat", sans-serif;
+	color: #8f8f8f;
+}
+#pricing .btn {
+	width: 100%;
+}
+@media (max-width: 990px) {
+	.price-heading {
+		font-size: 2.5rem;
+		margin: 2rem auto 0.5rem;
+	}
+	.pricing-cards {
+		padding: 3% 20%;
+	}
+}
+
+/* The download section  */
+#cta {
+	background-color: #ff4c68;
+	color: white;
+	height: 30rem;
+	display: grid;
+	align-content: center;
+}
+#cta h3 {
+	font-size: 4rem;
+	font-weight: 900;
+	margin: 0% auto 7%;
+}
+#cta button {
+	width: fit-content;
+}
+@media (max-width: 990px) {
+	#cta {
+		height: 25rem;
+	}
+	#cta h3 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin: 0% auto 4%;
+	}
+}
+/* The footer at the end  */
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 10rem;
+	margin: 2rem;
+}
+.footer-icons {
+	margin: 0px 0.5rem 1rem;
+	font-size: larger;
+}
+footer p {
+	color: #8f8f8f;
+}
